@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   '-g',
+1 verbose cli   'install',
+1 verbose cli   'ruby' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'ruby', null ]
+6 verbose cache add name=undefined spec="ruby" args=["ruby",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'ruby',
+7 verbose parsed url   path: 'ruby',
+7 verbose parsed url   href: 'ruby' }
+8 silly lockFile 18e40e14-ruby ruby
+9 verbose lock ruby C:\Users\JuanJosé\AppData\Roaming\npm-cache\18e40e14-ruby.lock
+10 silly lockFile 18e40e14-ruby ruby
+11 silly lockFile 18e40e14-ruby ruby
+12 verbose addNamed [ 'ruby', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile f07098c3-ruby ruby@
+15 verbose lock ruby@ C:\Users\JuanJosé\AppData\Roaming\npm-cache\f07098c3-ruby.lock
+16 silly addNameRange { name: 'ruby', range: '*', hasData: false }
+17 verbose request where is /ruby
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 8f9fea5d5f6d55a6
+20 verbose url raw /ruby
+21 verbose url resolving [ 'https://registry.npmjs.org/', './ruby' ]
+22 verbose url resolved https://registry.npmjs.org/ruby
+23 verbose request where is https://registry.npmjs.org/ruby
+24 info trying registry request attempt 1 at 13:02:51
+25 http GET https://registry.npmjs.org/ruby
+26 http 404 https://registry.npmjs.org/ruby
+27 silly registry.get cb [ 404,
+27 silly registry.get   { date: 'Tue, 14 Apr 2015 18:02:45 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"C3VGJ2FUDHYFN7WQXNGDO9Q7G"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '410',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-atl6223-ATL',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1429034565.876546,VS0,VE31',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly lockFile f07098c3-ruby ruby@
+29 silly lockFile f07098c3-ruby ruby@
+30 error 404 Not Found
+30 error 404
+30 error 404 'ruby' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Windows_NT 6.2.9200
+32 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "-g" "install" "ruby"
+33 error cwd C:\Users\JuanJosé\Documents\GitHub\www.launchzap.com
+34 error node -v v0.10.33
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]
