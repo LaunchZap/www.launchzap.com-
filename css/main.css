@@ -232,16 +232,16 @@ h6 span {
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   .background-clip .content .texture-1 {
     background: #fff;
-    background: #fff url("../../img/h1--background-1");
+    background: #fff url("h1--background-1");
   }
   .background-clip .content .texture-2 {
-    background: #fff url("../../img/h1--background-2");
+    background: #fff url("h1--background-2");
   }
   .background-clip .content .texture-3 {
-    background: #fff url("../../img/h1--background-3");
+    background: #fff url("h1--background-3");
   }
   .background-clip .content .texture-4 {
-    background: #fff url("../../img/h1--background-4");
+    background: #fff url("h1--background-4");
   }
   .background-clip .content .texture-1,
   .background-clip .content .texture-2,
