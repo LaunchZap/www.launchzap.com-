@@ -34,9 +34,7 @@
       <body>
         <header>
             <picture id="logo">
-                <img src="/img/header__logo--mobile.png" alt="LaunchZap Logo" id="header__logo--mobile">
-                <img src="/img/header__logo--tablet.png" alt="LaunchZap Logo" id="header__logo--tablet">
-                <img src="/img/header__logo--desktop.png" alt="LaunchZap Logo" id="header__logo--desktop">
+                <source media="(min-width)">
             </picture>
             <nav>
                 <ul>
@@ -49,7 +47,156 @@
                 </ul>
             </nav>
         </header>
-        (section#hero>((article#Slider$>(((h1>{titulo $})+(p>lipsum))+(picture>(source[media="(min-width:)" src="/img/Slider$__image--low-res.jpg"])+img[src="img/Slider$__image--Fallowback"])*3))*3)+(form.form#mailgun[role="form" method="POST"]>(label[for=""]+input[type="" id="" name="" placeholder="" required])*2+button[type="submit"])+(div#linkbar>(picture>img[src="/img/linkbar__blogLogo$" alt="blog Logo" id="linkbar__blogLogo"]*3+(h3>{Blog $})+(p>lipsum))*3)+((section#servicios>(picture>img[src="img/servicios__servicio$.jpg" alt="servicio$Alt" id="servicio$"])+h2{servicio$}+p>lipsum)*3)+(section#Testimonios>(picture>img[src="/img/quoteAuthor.jpg"])+(quote[author="autor"]>p>lipsum))+p.authorName{pepitoperes})+((section#Precios>(h2{precios}+(div>h3{precio $}+p>lipsum+(ul>li{feature $}*5))*3)))
+        <section id="hero">
+            <article id="Slider1">
+                <h1>titulo 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro natus iusto illum perferendis id quibusdam molestiae quidem, culpa laboriosam, incidunt! Incidunt quia labore magni, modi in odio, ad harum dolore?</p>
+                <picture>
+                    <source media="(min-width:)"  src="/img/Slider1__image--low-res.jpg">
+                    <img src="img/Slider1__image--Fallowback" class="fallowback" alt="">
+
+                    <source media="(min-width:)"  src="/img/Slider2__image--low-res.jpg">
+                    <img src="img/Slider2__image--Fallowback" alt="">
+
+                    <source media="(min-width:)"  src="/img/Slider3__image--low-res.jpg">
+                    <img src="img/Slider3__image--Fallowback" alt="">
+                </picture>
+            </article>
+            <article id="Slider2">
+                <h1>titulo 2</h1>
+                <p>Corporis, soluta minus, obcaecati temporibus ex eius praesentium sed tempore voluptatibus nam voluptatem doloremque. Distinctio qui, aperiam quas, sequi nemo enim libero aspernatur, accusamus neque unde sunt vero. Iusto, soluta.</p>
+                <picture>
+                    <source media="(min-width:)"  src="/img/Slider1__image--low-res.jpg">
+                    <img src="img/Slider1__image--Fallowback" class="fallowback" alt="">
+       
+                    <source media="(min-width:)"  src="/img/Slider2__image--low-res.jpg">
+                    <img src="img/Slider2__image--Fallowback" alt="">
+
+                    <source media="(min-width:)"  src="/img/Slider3__image--low-res.jpg">
+                    <img src="img/Slider3__image--Fallowback" alt="">
+                </picture>
+            </article>
+            <article id="Slider3">
+                <h1>titulo 3</h1>
+                <p>Nulla repellendus sit vero repudiandae sint eum molestias, impedit, quaerat sunt rerum! Consequatur esse sapiente repudiandae aspernatur culpa error amet deserunt pariatur autem possimus, debitis odio unde inventore dolores? Doloribus?</p>
+                <picture>
+                    <source media="(min-width:)"  src="/img/Slider1__image--low-res.jpg">
+                    <img src="img/Slider1__image--Fallowback" class="fallowback" alt="">
+
+                    <source media="(min-width:)"  src="/img/Slider2__image--low-res.jpg">
+                    <img src="img/Slider2__image--Fallowback" alt="">
+
+                    <source media="(min-width:)"  src="/img/Slider3__image--low-res.jpg">
+                    <img src="img/Slider3__image--Fallowback" alt="">
+                </picture>
+            </article>
+            <form action="" class="form" id="mailgun" role="form" method="POST">
+                <label for=""></label>
+                <input type="" id="" name="" placeholder="" required="">
+                <label for=""></label>
+                <input type="" id="" name="" placeholder="" required="">
+                <button type="submit"></button>
+            </form>
+            <div id="linkbar">
+                <picture>
+                    <img src="/img/linkbar__blogLogo1" alt="blog Logo" id="linkbar__blogLogo">
+                    <img src="/img/linkbar__blogLogo2" alt="blog Logo" id="linkbar__blogLogo">
+                    <img src="/img/linkbar__blogLogo3" alt="blog Logo" id="linkbar__blogLogo">
+                    <h3>Blog 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ipsa temporibus maiores numquam vel, necessitatibus, voluptatem est. Sapiente debitis nostrum laborum, rem omnis est sunt adipisci tempora! Quia, eveniet enim!</p>
+                </picture>
+                <picture>
+                    <img src="/img/linkbar__blogLogo1" alt="blog Logo" id="linkbar__blogLogo">
+                    <img src="/img/linkbar__blogLogo2" alt="blog Logo" id="linkbar__blogLogo">
+                    <img src="/img/linkbar__blogLogo3" alt="blog Logo" id="linkbar__blogLogo">
+                    <h3>Blog 2</h3>
+                    <p>Beatae rerum, vel! Qui ducimus tempora sint. Nemo eum, ipsum, delectus assumenda ipsa numquam ut, molestias, atque hic nostrum ex tempora accusamus? Necessitatibus molestias dolor commodi, repellendus reprehenderit reiciendis temporibus.</p>
+                </picture>
+                <picture>
+                    <img src="/img/linkbar__blogLogo1" alt="blog Logo" id="linkbar__blogLogo">
+                    <img src="/img/linkbar__blogLogo2" alt="blog Logo" id="linkbar__blogLogo">
+                    <img src="/img/linkbar__blogLogo3" alt="blog Logo" id="linkbar__blogLogo">
+                    <h3>Blog 3</h3>
+                    <p>Ducimus, fugit obcaecati vel. Ad voluptatibus officiis nihil aliquam aliquid assumenda consequatur dolore magni animi ab, aspernatur dolorem optio doloremque deserunt modi possimus minus est tenetur, ullam ex. Quasi, ab.</p>
+                </picture>
+            </div>
+            <section id="servicios">
+                <picture><img src="img/servicios__servicio1.jpg" alt="servicio1Alt" id="servicio1"></picture>
+                <h2>servicio1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto asperiores, non rerum qui repellendus officiis blanditiis sapiente neque ex deleniti dolores est dolore voluptates ducimus, necessitatibus molestias fuga labore optio.</p>
+            </section>
+            <section id="servicios">
+                <picture><img src="img/servicios__servicio2.jpg" alt="servicio2Alt" id="servicio2"></picture>
+                <h2>servicio2</h2>
+                <p>Itaque ea totam possimus, sequi neque consectetur veritatis modi, quidem nulla quod nam, ipsa est nesciunt esse impedit tenetur fugit blanditiis animi reiciendis magnam voluptatum. Amet ipsum dolorem laudantium aspernatur.</p>
+            </section>
+            <section id="servicios">
+                <picture><img src="img/servicios__servicio3.jpg" alt="servicio3Alt" id="servicio3"></picture>
+                <h2>servicio3</h2>
+                <p>Vero placeat cupiditate aliquam ullam libero, totam eveniet ipsam aut at sit atque, rem repudiandae consequatur nobis asperiores recusandae quia magni praesentium. Ex facere obcaecati vel rem! Esse, optio, praesentium.</p>
+            </section>
+            <section id="Testimonios">
+                <picture><img src="/img/quoteAuthor.jpg" alt=""></picture>
+                <quote author="autor">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nihil, eos eius nisi incidunt, aspernatur deleniti eveniet natus sapiente iste vitae quas cupiditate maiores, voluptas. Aspernatur a, praesentium ullam eveniet!</p>
+                </quote>
+            </section>
+            <p class="authorName">pepitoperes</p>
+        </section>
+        <section id="Precios">
+            <h2>precios</h2>
+            <div>
+                <h3>precio 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quas illo necessitatibus repudiandae eaque eius, dignissimos quis corrupti atque, itaque deleniti minima obcaecati ullam dolore explicabo molestias ab odit! Modi?
+                    <ul>
+                        <li>feature 1</li>
+                        <li>feature 2</li>
+                        <li>feature 3</li>
+                        <li>feature 4</li>
+                        <li>feature 5</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <h3>precio 2</h3>
+                <p>Amet cupiditate excepturi, nulla molestiae atque unde. Odio, asperiores laudantium, nesciunt, voluptate, repellat eveniet illo optio ad quaerat cupiditate tenetur repellendus molestiae doloremque quas! Ullam aspernatur quisquam aliquam quia fuga.
+                    <ul>
+                        <li>feature 1</li>
+                        <li>feature 2</li>
+                        <li>feature 3</li>
+                        <li>feature 4</li>
+                        <li>feature 5</li>
+                    </ul>
+                </p>
+            </div>
+            <div>
+                <h3>precio 3</h3>
+                <p>Commodi dolore labore ullam iusto laudantium, odit ipsum doloribus aspernatur quos reprehenderit, at amet. Eaque pariatur consequuntur, obcaecati. Harum optio inventore laudantium et, ab obcaecati illum velit vel dolor nihil!
+                    <ul>
+                        <li>feature 1</li>
+                        <li>feature 2</li>
+                        <li>feature 3</li>
+                        <li>feature 4</li>
+                        <li>feature 5</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section id="badges">
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+        </section>
+        <footer>
+            <a href="">link_1</a>
+            <a href="">link_2</a>
+            <a href="">link_3</a>
+            <a href="">link_4</a>
+            <a href="">link_5</a>
+            <a href="">link_6</a>LaunchZap, Inc.
+        </footer>
         
 
     </body>
