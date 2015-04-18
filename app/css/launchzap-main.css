@@ -8,6 +8,23 @@
        (_
 */
 /* ==========================================================================
+   fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'brandon_grotesquelight_italic';
+  src: url("/fonts/brandomgrotesque/brandon_light_it-webfont.eot");
+  src: url("/fonts/brandomgrotesque/brandon_light_it-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/brandomgrotesque/brandon_light_it-webfont.woff2") format('woff2'), url("/fonts/brandomgrotesque/brandon_light_it-webfont.woff") format('woff'), url("/fonts/brandomgrotesque/brandon_light_it-webfont.ttf") format('truetype'), url("/fonts/brandomgrotesque/brandon_light_it-webfont.svg#brandon_grotesquelight_italic") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url("/fonts/brandomgrotesque/brandon_light-webfont.eot");
+  src: url("/fonts/brandomgrotesque/brandon_light-webfont.eot?#iefix") format('embedded-opentype'), url("/fonts/brandomgrotesque/brandon_light-webfont.woff2") format('woff2'), url("/fonts/brandomgrotesque/brandon_light-webfont.woff") format('woff'), url("/fonts/brandomgrotesque/brandon_light-webfont.ttf") format('truetype'), url("/fonts/brandomgrotesque/brandon_light-webfont.svg#brandon_grotesquelight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ==========================================================================
    Text
    ========================================================================== */
 body {
@@ -183,12 +200,12 @@ article ol li {
 .page-title {
   margin-top: 100px;
 }
-@media bp-desktop {
+@media screen and (min-width: 1224px) {
   .content-frame .sidebar h3 {
     font-size: 40px;
   }
 }
-@media bp-tablet {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .page-title {
     margin-top: 80px;
   }
@@ -202,7 +219,7 @@ h6 span {
   display: inline;
 }
 .content h1 {
-  font-size: 50px;
+  font-size: 40px;
   left: -2px;
 /* Optical left-edge alignment */
 }
@@ -214,7 +231,7 @@ h6 span {
 .content h3 {
   font-size: 20px;
 }
-@media bp-smartphone {
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .page-title {
     margin-top: 40px;
   }
@@ -295,19 +312,25 @@ a.twitter-user:before {
 /* ==========================================================================
    Margins
    ========================================================================== */
-@media bp-smartphone {
-  #content {
-    width: 100%;
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .content {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 100px S;
   }
 }
-@media bp-tablet {
-  #content {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .content {
     width: 1100px;
+    margin: 0 auto;
+    padding: 200px;
   }
 }
-@media bp-desktop {
-  #content {
+@media screen and (min-width: 1224px) {
+  .content {
     width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
   }
 }
 /* ==========================================================================
@@ -319,14 +342,34 @@ a.twitter-user:before {
 /* ==============
     ELEMENTS
    ============== */
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .header {
     background-color: rgba(0,0,0,0.533);
   }
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .header {
+    position: fixed;
     background-color: rgba(0,0,0,0.533);
+    width: 100%;
+    height: 48px;
+    top: 0px;
+    left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -o-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1224px) {
@@ -354,25 +397,38 @@ a.twitter-user:before {
     align-items: center;
   }
 }
-@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .menu {
     display: none;
   }
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu {
     list-style-type: none;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    -ms-flex-item-align: end;
   }
-  .menu .menu_item {
+  .menu .menu__item {
     display: inline;
+  }
+  .menu .menu__item a {
+    color: #fff;
   }
 }
 @media screen and (min-width: 1224px) {
   .menu {
     list-style-type: none;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+    -ms-flex-item-align: end;
   }
   .menu .menu__item {
     display: inline;
+    margin: 0vw 2vw 0vw 2vw;
+  }
+  .menu .menu__item a {
+    color: #fff;
   }
 }
 /* ====================
@@ -394,7 +450,7 @@ a.twitter-user:before {
 .background canvas {
   visibility: hidden;
 }
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .background canvas {
     visibility: visible !important;
   }
