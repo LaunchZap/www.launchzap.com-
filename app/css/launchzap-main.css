@@ -345,6 +345,25 @@ a.twitter-user:before {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header {
     background-color: rgba(0,0,0,0.533);
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .header .header__menu-button {
+    display: block;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -370,6 +389,9 @@ a.twitter-user:before {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+  }
+  .header .header__menu-button {
+    display: none;
   }
 }
 @media screen and (min-width: 1224px) {
@@ -396,14 +418,28 @@ a.twitter-user:before {
     -webkit-align-items: center;
     align-items: center;
   }
+  .header .header__menu-button {
+    display: none;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .menu {
+    background-color: #000;
     display: none;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    width: 100%;
+  }
+  .menu .menu__item {
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu {
+    display: block !important;
     list-style-type: none;
     -webkit-align-self: flex-end;
     align-self: flex-end;
@@ -418,6 +454,7 @@ a.twitter-user:before {
 }
 @media screen and (min-width: 1224px) {
   .menu {
+    display: block !important;
     list-style-type: none;
     -webkit-align-self: flex-end;
     align-self: flex-end;
