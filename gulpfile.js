@@ -4,6 +4,10 @@ var gulp = require('gulp')
 ,   browserSync = require('browser-sync')
 ,   inject = require('gulp-inject')
 ,   wiredep = require('wiredep').stream
+,   useref = require('gulp-useref')
+,   uglify = require('gulp-uglify')
+,   gulpif = require('gulp-if')
+,   minifyCss = require('gulp-minify-css')
 ,   nib = require('nib');
 
 /***************
@@ -19,7 +23,7 @@ gulp.task('default', function(){
 ****************/
 
 gulp.task('build', function(){
-    runSequence('compile-stylus', 'inject', 'wiredep');
+    runSequence('compile-stylus', 'inject', 'wiredep', 'compress', 'copy');
 });
 
 /***************
@@ -122,6 +126,30 @@ gulp.task('wiredep', function () {
     }))
     .pipe(gulp.dest('./app'));
 });
+
+/***************
+* compress
+****************/
+gulp.task('compress', function(){
+    gulp.src('./app/index.html')
+    .pipe(useref.assets())
+    .pipe(gulpif('*.js', uglify({mangle: false})))
+    .pipe(gulpif('*.css', minifyCss()))
+    .pipe(gulp.dest('./dist'));
+});
+
+/***************
+* copy
+****************/
+
+gulp.task('copy', function(){
+    gulp.src('./app/index.html')
+    .pipe(useref())
+    .pipe(gulp.dest('./dist'));
+    gulp.src('./app/img/**')
+    .pipe(gulp.dest('./dist/img'));
+});
+
 
 /***************
 * utils
