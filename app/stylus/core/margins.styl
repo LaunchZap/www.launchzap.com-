@@ -1,11 +1,17 @@
-@media bp-smartphone
-	#content
-		width: 100%
-
-@media bp-tablet
-	#content
+@media screen and (min-device-width : 320px) and (max-device-width : 480px)
+	.content
 		width: 1100px
+		margin: 0 auto
+		padding: 100pxS
 
-@media bp-desktop
-	#content
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px)
+	.content
 		width: 1100px
+		margin: 0 auto
+		padding: 200px
+
+@media screen  and (min-width : 1224px)
+	.content
+		width: 1100px
+		margin: 0 auto
+		padding: 10px
