@@ -21,12 +21,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- build:css styles/style.min.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="/css/launchzap-main.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/normalize.min.css">
+        <!-- endinject -->
+        <!-- endbuild -->
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+<<<<<<< HEAD:index.html
 
+=======
+>>>>>>> origin/master:app/index.html
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -46,9 +57,9 @@
                     <li><a href="#">Soporte</a></li>
                     <li><a href="#">&#60&#47dev&#62</a></li>
                 </ul>
-            </nav>    
+            </nav>
         </header>
-        <div class="content">    
+        <div class="content">
             <section id="hero">
                 <article id="Slider1">
                     
@@ -136,7 +147,7 @@
                 </picture>
                 <quote author="autor">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, rem doloribus asperiores sapiente eveniet nobis, sit, modi nisi velit odit quis porro est dolor? Sapiente corporis inventore ex maxime repellat.</p>
-                </quote>   
+                </quote>
             </section>
             <section id="Precios">
                 <h2>precios</h2>
@@ -193,16 +204,32 @@
                      <li>elemento3</li>
                      <li>elemento4</li>
                      <li>elemento5</li>
-                 </ul> 
+                 </ul>
             </nav>
             <p>LaunchZap</p>
         </footer>
     </body>
 
+        <!-- build:js ./js/vendor.min.js -->
+        <!-- bower:js -->
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js ./js/app.min.js -->
+
+        <!-- inject:js -->
+        <script src="/js/Particles-Config.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/particlesJS.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- endinject -->
+        <!-- endbuild -->
 
         <script type="text/javascript" src="js/ParticlesJS.js"></script>
         <script type="text/javascript" src="js/particles-config.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
         </script>
@@ -221,5 +248,3 @@
         </script>
     </body>
 </html>
-
-

@@ -1,0 +1,25 @@
+{
+  "name": "www.launchzap.com-",
+  "version": "1.0.0",
+  "homepage": "https://github.com/LaunchZap/www.launchzap.com-",
+  "authors": [
+    "Sebastian Osorio <svzosorio@boolinc.co>"
+  ],
+  "description": "Landing for launchzap.com",
+  "main": "app/index.html",
+  "keywords": [
+    "launchzap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
