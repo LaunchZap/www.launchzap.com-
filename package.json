@@ -1,0 +1,42 @@
+{
+  "name": "www.launchzap.com-",
+  "version": "1.0.0",
+  "description": "landng for launchzap.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaunchZap/www.launchzap.com-.git"
+  },
+  "keywords": [
+    "launchzap"
+  ],
+  "author": "Sebastián Osorio <svzosorio@boolinc.co>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaunchZap/www.launchzap.com-/issues"
+  },
+  "homepage": "https://github.com/LaunchZap/www.launchzap.com-",
+  "devDependencies": {
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-if": "^1.2.5",
+    "gulp-inject": "^1.2.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-useref": "^1.1.2",
+    "run-sequence": "^1.0.2",
+    "wiredep": "^2.2.2"
+  },
+  "dependencies": {
+    "nib": "^1.1.0"
+  }
+}
