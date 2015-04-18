@@ -3,6 +3,7 @@ var gulp = require('gulp')
 ,   runSequence = require('run-sequence')
 ,   browserSync = require('browser-sync')
 ,   inject = require('gulp-inject')
+,   wiredep = require('wiredep').stream
 ,   nib = require('nib');
 
 /***************
@@ -18,7 +19,7 @@ gulp.task('default', function(){
 ****************/
 
 gulp.task('build', function(){
-    runSequence('compile-stylus', 'inject');
+    runSequence('compile-stylus', 'inject', 'wiredep');
 });
 
 /***************
@@ -77,6 +78,24 @@ gulp.task('browser-sync', function() {
 });
 
 /***************
+* dist-server
+****************/
+
+gulp.task('dist-server', function() {
+  browserSync({
+    server: {
+      baseDir: __dirname + '/dist/',
+      directory: true
+    },
+    ghostMode: false,
+    notify: false,
+    debounce: 200,
+    port: 9000,
+    startPath: 'index.html'
+  });
+});
+
+/***************
 * inject
 ****************/
 
@@ -90,6 +109,18 @@ gulp.task('inject', function() {
     }))
     .pipe(gulp.dest('./app'))
     .pipe(notify('Injected archives into your html'));
+});
+
+/***************
+* wiredep
+****************/
+
+gulp.task('wiredep', function () {
+    gulp.src('./app/index.html')
+    .pipe(wiredep({
+        directory: './app/lib'
+    }))
+    .pipe(gulp.dest('./app'));
 });
 
 /***************
