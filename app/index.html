@@ -26,45 +26,48 @@
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> bsowser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="particles-js" class="background"></div>
-        <header id="menu">
+        <header id="menu" class="header">
             <picture id="logo">
                 <sorce srcset="/img/header__logo--mobile.png" alt="LaunchZap Logo" id="header__logo--mobile">
             </picture>
+            <div class="header__menu-button">
+                M
+            </div>
             <nav>
-                <ul>
-                    <li><a href="#">Producto</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Prensa</a></li>
-                    <li><a href="#">Soporte</a></li>
-                    <li><a href="#">&#60&#47dev&#62</a></li>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#">Producto</a></li>
+                    <li class="menu__item"><a href="#">Nosotros</a></li>
+                    <li class="menu__item"><a href="#">Blog</a></li>
+                    <li class="menu__item"><a href="#">Prensa</a></li>
+                    <li class="menu__item"><a href="#">Soporte</a></li>
+                    <li class="menu__item"><a href="#">&#60&#47dev&#62</a></li>
                 </ul>
             </nav>    
         </header>
         <div class="content">    
             <section id="hero">
                 <article id="Slider1">
-                    
-                    <h1 class="background-clip content texture-1">titulo 1</h1>
+                    <h1 class="background-clip texture-1">titulo 1</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi illum facilis repellat at esse eaque, qui aliquid officiis ullam deleniti ipsum hic praesentium tempora optio libero commodi ea, dignissimos fugiat!</p>
                     <picture>
-                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" srcset="/img/Slider1__image--movile.jpg">
-              
-                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" srcset="/img/Slider1__image--tablet.jpg">
+                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" src="/img/Slider1__image--movile.jpg">
+                        <img src="img/Slider1__image--Fallowback" alt="">
+
+                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" src="/img/Slider1__image--tablet.jpg">
+                        <img src="img/Slider1__image--Fallowback" alt="">
 
                         <source media="screen  and (min-width : 1224px)" srcset="/img/Slider1__image--desktop.jpg">
                     </picture>
-
                 </article>
+                
                 <article id="Slider2">
-                    <h1 class="background-clip content texture-2">titulo 2</h1>
+                    <h1 class="background-clip texture-2">titulo 2</h1>
                     <p>Asperiores fugit rerum similique est odit earum quaerat. Ratione eveniet consequuntur at, id itaque alias quo fuga veniam necessitatibus quam ea quidem eligendi obcaecati veritatis officiis laudantium qui voluptas tempora.</p>
                     <picture>
                         <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" srcset="/img/Slider2__image--movile.jpg">
@@ -72,15 +75,19 @@
                         <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" srcset="/img/Slider2__image--tablet.jpg">
 
                         <source media="screen  and (min-width : 1224px)" srcset="/img/Slider2__image--desktop.jpg">
+                    
                     </picture>
                 </article>
                 <article id="Slider3">
-                    <h1 class="background-clip content texture-3">titulo 3</h1>
+                    <h1 class="background-clip texture-3">titulo 3</h1>
                     <p>Voluptatibus, numquam non odit nisi inventore dolore incidunt tempore dicta assumenda fugiat. Repellat, cumque maxime eum deserunt accusamus ullam suscipit dolorem sit ipsa quibusdam nemo harum eos, est nihil eveniet.</p>
                     <picture>
-                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" srcset="/img/Slider3__image--movile.jpg">
-              
-                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" srcset="/img/Slider3__image--tablet.jpg">
+
+                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" src="/img/Slider3__image--movile.jpg">
+                        <img src="img/Slider3__image--Fallowback" alt="">
+
+                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" src="/img/Slider3__image--tablet.jpg">
+                        <img src="img/Slider3__image--Fallowback" alt="">
 
                         <source media="screen  and (min-width : 1224px)" srcset="/img/Slider3__image--desktop.jpg">
                     </picture>
@@ -195,11 +202,9 @@
         <script type="text/javascript" src="js/particles-config.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
         </script>
 
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

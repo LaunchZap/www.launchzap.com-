@@ -1,0 +1,36 @@
+/* ==============
+    MENU
+   ============== */
+@media bp-smartphone
+    .menu
+        background-color: black
+        display: none
+        position: absolute
+        top: 48px;
+        left: 0px;
+        width: 100%
+        .menu__item
+            width: 100%
+            padding: 5px 5px 5px 5px
+            z-index: 2
+
+@media bp-tablet
+    .menu
+        display: block !important
+        list-style-type: none
+        align-self: flex-end
+        .menu__item
+            display: inline
+            a
+                color: white
+
+@media bp-desktop
+    .menu
+        display: block !important
+        list-style-type: none
+        align-self: flex-end
+        .menu__item
+            display: inline
+            margin: 0vw 2vw 0vw 2vw
+            a
+                color: white
