@@ -21,8 +21,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- build styles/styles.min.css-->
+
+        <!-- bower:css-->
+        <!-- endbower-->
+
+        <!-- inject:css -->
+        <link rel="stylesheet" href="/css/launchzap-main.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/normalize.min.css">
+        <!-- endinject -->
+        <!-- endbuild -->
+
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
@@ -40,7 +51,7 @@
                 M
             </div>
             <nav>
-                <ul class="menu">
+                <ul class="menu content">
                     <li class="menu__item"><a href="#">Producto</a></li>
                     <li class="menu__item"><a href="#">Nosotros</a></li>
                     <li class="menu__item"><a href="#">Blog</a></li>
@@ -48,9 +59,9 @@
                     <li class="menu__item"><a href="#">Soporte</a></li>
                     <li class="menu__item"><a href="#">&#60&#47dev&#62</a></li>
                 </ul>
-            </nav>    
+            </nav>
         </header>
-        <div class="content">    
+        <div class="content">
             <section id="hero">
                 <article id="Slider1">
                     <h1 class="background-clip texture-1">titulo 1</h1>
@@ -65,17 +76,17 @@
                         <source media="screen  and (min-width : 1224px)" srcset="/img/Slider1__image--desktop.jpg">
                     </picture>
                 </article>
-                
+
                 <article id="Slider2">
                     <h1 class="background-clip texture-2">titulo 2</h1>
                     <p>Asperiores fugit rerum similique est odit earum quaerat. Ratione eveniet consequuntur at, id itaque alias quo fuga veniam necessitatibus quam ea quidem eligendi obcaecati veritatis officiis laudantium qui voluptas tempora.</p>
                     <picture>
                         <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" srcset="/img/Slider2__image--movile.jpg">
-              
+
                         <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" srcset="/img/Slider2__image--tablet.jpg">
 
                         <source media="screen  and (min-width : 1224px)" srcset="/img/Slider2__image--desktop.jpg">
-                    
+
                     </picture>
                 </article>
                 <article id="Slider3">
@@ -134,7 +145,7 @@
                 </picture>
                 <quote author="autor">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, rem doloribus asperiores sapiente eveniet nobis, sit, modi nisi velit odit quis porro est dolor? Sapiente corporis inventore ex maxime repellat.</p>
-                </quote>   
+                </quote>
             </section>
             <section id="Precios">
                 <h2>precios</h2>
@@ -191,20 +202,28 @@
                      <li>elemento3</li>
                      <li>elemento4</li>
                      <li>elemento5</li>
-                 </ul> 
+                 </ul>
             </nav>
             <p>LaunchZap</p>
         </footer>
     </body>
 
+        <!-- build js/vendor.min.css -->
+        <!-- bower:js -->
+        <script src="lib/jquery/dist/jquery.js"></script>
+        <!-- endbower-->
+        <!-- endbuild -->
 
-        <script type="text/javascript" src="js/ParticlesJS.js"></script>
-        <script type="text/javascript" src="js/particles-config.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-        </script>
-
-        <script src="js/plugins.js"></script>
+        <!-- build js/app.min.css -->
+        <!-- inject:js -->
+        <script src="/js/Particles-Config.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/particlesJS.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <!-- endinject -->
+        <!-- endbuild-->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
