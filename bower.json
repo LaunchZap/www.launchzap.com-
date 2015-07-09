@@ -1,16 +1,16 @@
 {
-  "name": "www.launchzap.com-",
-  "version": "1.0.0",
+  "name": "Launchzap",
+  "version": "1",
   "homepage": "https://github.com/LaunchZap/www.launchzap.com-",
   "authors": [
-    "Sebastian Osorio <svzosorio@boolinc.co>"
+    "Sebastian Osorio <svzosorio@boolinc.co>; Juan José Albán <j@launchzap.com>."
   ],
   "description": "Landing for launchzap.com",
   "main": "app/index.html",
   "keywords": [
     "launchzap"
   ],
-  "license": "MIT",
+  "license": "Apache .20",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -21,5 +21,8 @@
   ],
   "dependencies": {
     "jquery": "~2.1.3"
-  }
+  },
+  "moduleType": [
+    "node"
+  ]
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- /*
+<!--
      _                  ___
  ___/__)            /) (,  )
 (, /   _        _ (/      / _    __
@@ -7,232 +7,329 @@
  (_____ Handmade 2015 )   /  .-/
         )            (__ /  (_/
        (_
-*/ -->
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>LaunchZap | La red M2M</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <!-- build styles/styles.min.css-->
-
-        <!-- bower:css-->
-        <!-- endbower-->
-
-        <!-- inject:css -->
-        <link rel="stylesheet" href="/css/launchzap-main.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/normalize.min.css">
-        <!-- endinject -->
-        <!-- endbuild -->
 
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> bsowser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div id="particles-js" class="background"></div>
-        <header id="menu" class="header">
-            <picture id="logo">
-                <sorce srcset="/img/header__logo--mobile.png" alt="LaunchZap Logo" id="header__logo--mobile">
-            </picture>
-            <div class="header__menu-button">
-                M
+  Made with Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+-->
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Android</title>
+
+    <!-- Page styles -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="launchzap-logo-image" src="images/launchzap-logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field" />
             </div>
-            <nav>
-                <ul class="menu">
-                    <li class="menu__item"><a href="#">Producto</a></li>
-                    <li class="menu__item"><a href="#">Nosotros</a></li>
-                    <li class="menu__item"><a href="#">Blog</a></li>
-                    <li class="menu__item"><a href="#">Prensa</a></li>
-                    <li class="menu__item"><a href="#">Soporte</a></li>
-                    <li class="menu__item"><a href="#">&#60&#47dev&#62</a></li>
-                </ul>
+          </div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">LaunchZap</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Clientes</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Testimonios</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Equipo</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Soporte</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Prensa</a>
             </nav>
-        </header>
-        <div class="content">
-            <section id="hero">
-                <article id="Slider1">
-                    <h1 class="background-clip texture-1">titulo 1</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi illum facilis repellat at esse eaque, qui aliquid officiis ullam deleniti ipsum hic praesentium tempora optio libero commodi ea, dignissimos fugiat!</p>
-                    <picture>
-                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" src="/img/Slider1__image--movile.jpg">
-                        <img src="img/Slider1__image--Fallowback" alt="">
-
-                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" src="/img/Slider1__image--tablet.jpg">
-                        <img src="img/Slider1__image--Fallowback" alt="">
-
-                        <source media="screen  and (min-width : 1224px)" srcset="/img/Slider1__image--desktop.jpg">
-                    </picture>
-                </article>
-
-                <article id="Slider2">
-                    <h1 class="background-clip texture-2">titulo 2</h1>
-                    <p>Asperiores fugit rerum similique est odit earum quaerat. Ratione eveniet consequuntur at, id itaque alias quo fuga veniam necessitatibus quam ea quidem eligendi obcaecati veritatis officiis laudantium qui voluptas tempora.</p>
-                    <picture>
-                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" srcset="/img/Slider2__image--movile.jpg">
-
-                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" srcset="/img/Slider2__image--tablet.jpg">
-
-                        <source media="screen  and (min-width : 1224px)" srcset="/img/Slider2__image--desktop.jpg">
-
-                    </picture>
-                </article>
-                <article id="Slider3">
-                    <h1 class="background-clip texture-3">titulo 3</h1>
-                    <p>Voluptatibus, numquam non odit nisi inventore dolore incidunt tempore dicta assumenda fugiat. Repellat, cumque maxime eum deserunt accusamus ullam suscipit dolorem sit ipsa quibusdam nemo harum eos, est nihil eveniet.</p>
-                    <picture>
-
-                        <source media="screen and (min-device-width : 320px) and (max-device-width : 480px)" src="/img/Slider3__image--movile.jpg">
-                        <img src="img/Slider3__image--Fallowback" alt="">
-
-                        <source media="screen and (min-device-width : 768px) and (max-device-width : 1024px)" src="/img/Slider3__image--tablet.jpg">
-                        <img src="img/Slider3__image--Fallowback" alt="">
-
-                        <source media="screen  and (min-width : 1224px)" srcset="/img/Slider3__image--desktop.jpg">
-                    </picture>
-                </article>
-                <form action="" class="form" id="mailgun" role="form" method="POST">
-                    <label for=""></label>
-                    <input type="" id="" name="" placeholder="" required="">
-                    <label for=""></label>
-                    <input type="" id="" name="" placeholder="" required="">
-                    <button type="submit"></button>
-                </form>
-                <div id="linkbar">
-                    <picture>
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo1" alt="blog Logo" id="linkbar__blogLogo">
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo2" alt="blog Logo" id="linkbar__blogLogo">
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo3" alt="blog Logo" id="linkbar__blogLogo">
-                    </picture>
-                        <h3>Blog 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, autem sit odio laborum ratione nostrum, adipisci provident. Illum, nobis, hic. Eveniet doloremque ullam iste sit, mollitia repellendus, ab. Quidem, corporis?</p>
-                    <picture>
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo1" alt="blog Logo" id="linkbar__blogLogo">
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo2" alt="blog Logo" id="linkbar__blogLogo">
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo3" alt="blog Logo" id="linkbar__blogLogo">
-                    </picture>
-                        <h3>Blog 2</h3>
-                        <p>Nesciunt eum ullam, distinctio vitae sint delectus ea iure, reprehenderit, omnis repellendus sed saepe? Modi doloribus a aliquam fugit. Ea aspernatur sint fugit expedita, architecto reprehenderit nihil velit assumenda incidunt?</p>
-                    <picture>
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo1" alt="blog Logo" id="linkbar__blogLogo">
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo2" alt="blog Logo" id="linkbar__blogLogo">
-                        <source media="(min-width:)" srcset="/img/linkbar__blogLogo3" alt="blog Logo" id="linkbar__blogLogo">
-                    </picture>
-                        <h3>Blog 3</h3>
-                        <p>Iste fugiat tenetur impedit. Recusandae explicabo fugiat asperiores nemo nam cumque odio, nobis consequuntur, blanditiis perspiciatis, repellat libero. Odio deleniti vel nobis praesentium! Voluptate numquam veritatis repellat nulla assumenda. Saepe.</p>
-                </div>
-            </section>
-            <section id="servicios">
-                <picture><img src="img/servicios__servicio1.jpg" alt="servicio1Alt" id="servicio1"></picture>
-                <h2>servicio1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis illo non a temporibus ducimus maiores, accusantium facilis architecto veritatis perspiciatis, reprehenderit porro tempore iusto, asperiores, aliquam hic? Sunt, harum, eum?</p>
-            </section>la v
-            <section id="Testimonios">
-                <picture>
-                    <img src="img/quoteAuthor.jpg" alt="">
-                </picture>
-                <quote author="autor">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, rem doloribus asperiores sapiente eveniet nobis, sit, modi nisi velit odit quis porro est dolor? Sapiente corporis inventore ex maxime repellat.</p>
-                </quote>
-            </section>
-            <section id="Precios">
-                <h2>precios</h2>
-                <div>
-                    <h3>precio 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quam impedit consectetur ipsum beatae non quod voluptatem ullam cumque, ipsa asperiores. Modi ipsum consequuntur, sint sequi voluptatum similique fugiat minus.
-                        <ul>
-                            <li>feature 1</li>
-                            <li>feature 2</li>
-                            <li>feature 3</li>
-                            <li>feature 4</li>
-                            <li>feature 5</li>
-                        </ul>
-                    </p>
-                </div>
-                <div>
-                    <h3>precio 2</h3>
-                    <p>Non maxime eos expedita dolores placeat odit ipsam, aliquid, nulla inventore explicabo pariatur. Nesciunt sed dolore ipsum magnam corporis officiis dicta illum, mollitia optio natus quo inventore deserunt cum doloremque!
-                        <ul>
-                            <li>feature 1</li>
-                            <li>feature 2</li>
-                            <li>feature 3</li>
-                            <li>feature 4</li>
-                            <li>feature 5</li>
-                        </ul>
-                    </p>
-                </div>
-                <div>
-                    <h3>precio 3</h3>
-                    <p>Enim optio aperiam fugit quidem nihil quo sequi, ducimus. Similique et facilis nesciunt quibusdam aliquam harum debitis a, nulla provident hic. Doloribus molestias velit accusamus commodi mollitia adipisci quos libero.
-                        <ul>
-                            <li>feature 1</li>
-                            <li>feature 2</li>
-                            <li>feature 3</li>
-                            <li>feature 4</li>
-                            <li>feature 5</li>
-                        </ul>
-                    </p>
-                </div>
-            </section>
-            <section id="badges">
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-                <a href=""><img src="" alt=""></a>
-            </section>
+          </div>
+          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li disabled class="mdl-menu__item">Registro</li>
+            <li disabled class="mdl-menu__item">Acceso</li>
+            <li class="mdl-menu__item">Contacto</li>
+            <li class="mdl-menu__item">Prensa</li>
+          </ul>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/launchzap-logo.png">
+          </span>
         </div>
-        <footer>
-            <nav>
-                <ul>
-                     <li>elemento1</li>
-                     <li>elemento2</li>
-                     <li>elemento3</li>
-                     <li>elemento4</li>
-                     <li>elemento5</li>
-                 </ul>
-            </nav>
-            <p>LaunchZap</p>
+      </div>
+
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/LaunchZap-logo-white.png">
+        </span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">LaunchZap</a>
+            <a class="mdl-navigation__link" href="">Conectividad</a>
+            <a class="mdl-navigation__link" href="">Precios</a>
+            <a class="mdl-navigation__link" href="">Clientes</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">Aplicaciones</span>
+            <a class="mdl-navigation__link" href="">Apps</a>
+            <a class="mdl-navigation__link" href="">IOT</a>
+            <a class="mdl-navigation__link" href="">GPS</a>
+            <a class="mdl-navigation__link" href="">Redes suplementarias</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">Nuestros Blogs</span>
+            <a class="mdl-navigation__link" href="">Diseño</a>
+            <a class="mdl-navigation__link" href="">Desarrollo</a>
+            <a class="mdl-navigation__link" href="">Gestion</a>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link" href="">Para desarrolladores</span>
+            <a class="mdl-navigation__link" href="">App developers</a>
+            <a class="mdl-navigation__link" href="">Proyectos Open Source</a>
+            <a class="mdl-navigation__link" href="">Android SDK</a>
+            <a class="mdl-navigation__link" href="">API's</a>
+            <a class="mdl-navigation__link" href="">Documentación</a>
+        </nav>
+      </div>
+
+      <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+        <div class="android-be-together-section mdl-typography--text-center">
+          <div class="android-font android-slogan">be together. not the same.</div>
+          <div class="android-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
+          <div class="android-font android-create-character">
+            <a href=""><img src="images/andy.png"> create your android character</a>
+          </div>
+
+          <a href="#screens">
+            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+              <i class="material-icons">expand_more</i>
+            </button>
+          </a>
+        </div>
+        <div class="android-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+          <div class="android-screens">
+            <div class="android-wear android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/wear-silver-on.png">
+                <img class="android-screen-image" src="images/wear-black-on.png">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+            </div>
+            <div class="android-phone android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus6-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+            </div>
+            <div class="android-tablet android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/nexus9-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+            </div>
+            <div class="android-tv android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/tv-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+            </div>
+            <div class="android-auto android-screen">
+              <a class="android-image-link" href="">
+                <img class="android-screen-image" src="images/auto-on.jpg">
+              </a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+            </div>
+          </div>
+        </div>
+        <div class="android-wear-section">
+          <div class="android-wear-band">
+            <div class="android-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                Android works perfectly with your favourite apps like Google Maps,
+                Calendar and YouTube.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
+                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="android-customized-section">
+          <div class="android-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+            <p class="mdl-typography--font-light">
+              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+              <br>
+              <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
+            </p>
+          </div>
+          <div class="android-customized-section-image"></div>
+        </div>
+        <div class="android-more-section">
+          <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
+          <div class="android-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get going on Android</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android quick and easy</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Make the switch
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Create your own Android character</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into you, your friends, anyone!</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   androidify.com
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download now
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your Android device uniquely yours.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Find apps
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+              &nbsp;
+              <button class="mdl-mega-footer--social-btn"></button>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
+            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
+              Versions
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
+              <li class="mdl-menu__item">5.0 Lollipop</li>
+              <li class="mdl-menu__item">4.4 KitKat</li>
+              <li class="mdl-menu__item">4.3 Jelly Bean</li>
+              <li class="mdl-menu__item">Android History</li>
+            </ul>
+            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
+              For Developers
+              <i class="material-icons">arrow_drop_up</i>
+            </a>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
+              <li class="mdl-menu__item">App developer resources</li>
+              <li class="mdl-menu__item">Android Open Source Project</li>
+              <li class="mdl-menu__item">Android SDK</li>
+              <li class="mdl-menu__item">Android for Work</li>
+            </ul>
+            <a class="android-link mdl-typography--font-light" href="">Blog</a>
+            <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
+          </div>
+
         </footer>
-    </body>
+      </div>
+    </div>
+    <a href="https://github.com/google/material-design-lite/blob/master/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <script src="js/material.min.js"></script>
 
-        <!-- build js/vendor.min.css -->
-        <!-- bower:js -->
-        <script src="lib/jquery/dist/jquery.js"></script>
-        <!-- endbower-->
-        <!-- endbuild -->
 
-        <!-- build js/app.min.css -->
-        <!-- inject:js -->
-        <script src="/js/Particles-Config.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/particlesJS.js"></script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <!-- endinject -->
-        <!-- endbuild-->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+  </body>
 </html>
