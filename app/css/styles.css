@@ -317,7 +317,7 @@ a img{
   position: relative;
   background: url('images/wear.png') center top no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 400px;
 }
 
 .android-wear-band {

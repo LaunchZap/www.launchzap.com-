@@ -151,7 +151,8 @@ gulp.task('copy', function(){
     .pipe(gulp.dest('./dist/img'));
 
     gulp.src('.app/fonts/**')
-    .pipe(gulp.dest('./dist/fonts'));
+    .pipe(gulp.dest('./dist/fonts
+'));
 });
 
 
